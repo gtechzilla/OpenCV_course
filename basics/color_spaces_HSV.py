@@ -3,7 +3,7 @@
 import cv2
 import numpy
 
-image=cv2.imread(r'C:/Users/gtechzilla/Documents/cv/images/moana1.jpg')
+image=cv2.imread(r'../images/moana1.jpg')
 
 #converting RGB image to HSV
 hsv_image=cv2.cvtColor(image,cv2.COLOR_BGR2HSV)
