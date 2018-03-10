@@ -18,3 +18,12 @@ histogram = cv2.calcHist([image],[0],None,[256],[0,256])
 #to plot the histogram,we first flatten our image using ravel,i.e makes it a 1 dimensional array
 plt.hist(image.ravel(),256,[0,256])
 plt.show()
+
+color = ('b','g','r')
+#to view separate colors
+for i,col in enumerate(color):
+    hist2=cv2.calcHist([image],[i],None,[256],[0,256])
+    plt.plot(hist2,color=col)
+    plt.xlim([0,256])
+
+plt.show()
